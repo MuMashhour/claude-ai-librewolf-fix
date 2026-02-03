@@ -43,7 +43,7 @@ The idea:
 
 - Install the Tampermonkey extension in LibreWolf
 - Create a new userscript
-- Paste the code above
+- Paste the code in `claude-librewolf-fix.js`
 - Reload `claude.ai`
 
 Claude should now stream responses normally without freezing.
