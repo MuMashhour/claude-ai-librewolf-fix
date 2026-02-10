@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Claude AI LibreWolf Freeze Fix
-// @namespace    https://github.com/MuMashhour/claude-librewolf-freeze-fix
+// @namespace    https://github.com/MuMashhour/claude-librewolf-fix
 // @version      1.0.0
 // @description  Work around Claude.ai freezing in LibreWolf caused by zero Date.now() deltas
 // @match        https://claude.ai/*
