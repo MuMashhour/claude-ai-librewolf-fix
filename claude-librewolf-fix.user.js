@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Claude AI LibreWolf Freeze Fix
 // @namespace    https://github.com/MuMashhour/claude-ai-librewolf-fix
-// @version      1.0.0
+// @version      2.0.0
 // @description  Work around Claude.ai freezing in LibreWolf caused by zero Date.now() deltas
 // @match        https://claude.ai/*
 // @run-at       document-start
@@ -9,10 +9,10 @@
 // ==/UserScript==
 
 (() => {
-    const originalNow = Date.now.bind(Date);
+    const originalNow = Performance.now.bind(Performance);
     let last = originalNow();
 
-    Date.now = () => {
+    Performance.now = () => {
         const now = originalNow();
 
         // LibreWolf may return the same timestamp multiple times.
